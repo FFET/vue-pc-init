@@ -1,0 +1,50 @@
+{
+  "name": "vue-init",
+  "version": "0.1.0",
+  "private": true,
+  "description": "vue project init",
+  "license": "MIT",
+  "author": "Jay",
+  "scripts": {
+    "dev": "npm run start",
+    "start": "cross-env NODE_ENV=development BUILD_ENV=dev webpack-dev-server --config build/webpack.dev.config.js",
+    "build": "cross-env NODE_ENV=production BUILD_ENV=prod webpack --config build/webpack.prod.config.js",
+    "prettier": "prettier --write  \"./**/*.{js,vue,css,less,md,json}\""
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "ant-design-vue": "^1.4.10",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/runtime-corejs3": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.13.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cloud-storage-webpack-plugin": "^0.0.4",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^1.19.1",
+    "terser-webpack-plugin": "^2.3.4",
+    "url-loader": "^3.0.0",
+    "vue-loader": "^15.8.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.2",
+    "webpack-merge": "^4.2.2"
+  }
+}
