@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <div>后台管理</div>
-    <div><span @click="fnLogout" :style="{ cursor: 'pointer' }">退出</span></div>
+    <div>
+      <span @click="fnLogout" :style="{ cursor: 'pointer' }">退出</span>
+    </div>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ export default {
   methods: {
     fnLogout() {
       console.log("logout");
+      sessionStorage.removeItem("token");
+      this.$router.replace("/login");
     }
   }
 };

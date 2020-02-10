@@ -26,13 +26,13 @@ export default {
     };
   },
   created() {
-    this.fnGetData();
+    // this.fnGetData();
   },
   methods: {
-    async fnGetData() {
-      const response = await request.get("https://m.shanghaim.net/napi/pneumonia/query");
-      this.data = response.data.data;
-    }
+    // async fnGetData() {
+    //   const response = await request.get("https://m.shanghaim.net/napi/pneumonia/query");
+    //   this.data = response.data.data;
+    // }
   }
 };
 </script>
