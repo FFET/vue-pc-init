@@ -82,7 +82,7 @@ input {
 }
 
 button {
-  background-color: #ffff;
+  // background-color: #ffff;
   border: 0;
   color: #333;
   font-size: 16px;

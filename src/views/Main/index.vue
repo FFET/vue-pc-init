@@ -39,7 +39,7 @@ export default {
 
 <style lang="less" scoped>
 .content {
-  margin-left: 150px;
+  margin-left: 220px;
   margin-top: 60px;
 }
 </style>

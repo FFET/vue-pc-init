@@ -28,6 +28,10 @@ module.exports = merge(common, {
       {
         test: /\.(png|svg|jpg|gif|jpeg)$/,
         use: ["file-loader"]
+      },
+      {
+        test: /\.(ttf|woff)$/,
+        use: ["file-loader"]
       }
     ]
   },

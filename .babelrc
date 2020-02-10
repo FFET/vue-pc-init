@@ -32,9 +32,8 @@
     [
       "import",
       {
-        "libraryName": "ant-design-vue",
-        "libraryDirectory": "es",
-        "style": true
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
       }
     ]
   ]

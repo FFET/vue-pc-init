@@ -7,11 +7,14 @@ import Login from "@/views/Login";
 import NotFound from "@/views/notFound";
 import "@/styles/index.less";
 
-import { Button, Menu, Icon } from "ant-design-vue";
-Vue.component(Button.name, Button);
-
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
+
+import ElementUI, { Button, Select } from "element-ui/lib";
+import "element-ui/lib/theme-chalk/index.css";
+// Vue.component(Button.name, Button);
+// Vue.component(Select.name, Select);
+Vue.use(ElementUI);
 
 const router = new VueRouter({
   mode: "hash",
