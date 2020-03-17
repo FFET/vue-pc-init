@@ -6,7 +6,6 @@
 
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const CloudStorageWebpackPlugin = require("cloud-storage-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const merge = require("webpack-merge");
@@ -54,8 +53,6 @@ module.exports = merge(common, {
   },
   plugins: [
     new CleanWebpackPlugin({}),
-    // cloud storage
-    // new CloudStorageWebpackPlugin(require("../config/cloudStorage.json")),
     new MiniCssExtractPlugin({
       filename: "css/[contenthash].css",
       chunkFilename: "css/[contenthash].css"
